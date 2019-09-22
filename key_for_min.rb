@@ -24,4 +24,3 @@ def key_for_min_value(name_hash)
   return min_key #nil will be returned if hash is empty
 end
 
-
