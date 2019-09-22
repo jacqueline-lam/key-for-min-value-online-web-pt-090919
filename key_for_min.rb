@@ -20,8 +20,8 @@ def key_for_min_value(name_hash)
       min_key = key
     end
   end
-  return nil if min_key == nil #if hash is empty
-  return min_key
+  # return nil if min_key == nil 
+  return min_key #nil will be returned if hash is empty
 end
 
 
