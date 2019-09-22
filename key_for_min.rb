@@ -5,10 +5,13 @@
 # If the method is called and passed an argument of an empty hash, it should return nil
 
 def key_for_min_value(name_hash)
-  min_key = ""
-  min_value = 0
+  min_key = nil
+  min_value = nil
   name_hash.collect do |key, value|
-    if value < min_value
+    if min_value == nil
+      min_value = value
+      min_key = key
+      value < min_value
       min_key = key
       min_value = value
     end
